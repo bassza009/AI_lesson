@@ -54,6 +54,7 @@ def find_best_move(board):
     # If it's the AI's first turn and the board is mostly empty, 
     # pick a random spot to speed up processing.
     empty_cells = get_empty_cells(board)
+    
     if len(empty_cells) == 9:
         return random.choice(empty_cells)
 

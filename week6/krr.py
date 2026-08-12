@@ -1,7 +1,7 @@
 import os
 import sys
 
-# Fix Windows console UTF-8 output issue
+
 if sys.platform == "win32":
     try:
         sys.stdout.reconfigure(encoding='utf-8')

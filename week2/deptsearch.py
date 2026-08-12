@@ -1,3 +1,4 @@
+def 
 class Puzzle_resolve :
     
     def __init__(self,puzzle):
@@ -5,3 +6,5 @@ class Puzzle_resolve :
 
     def check_lenght(self,puzzle):
         lenght = len(puzzle)    
+
+if __name__ =="__main__":
