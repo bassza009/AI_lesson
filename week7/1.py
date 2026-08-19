@@ -41,8 +41,7 @@ def recall(tp,fn):
 
 def f1_score(prec,rec):
     return 2*(prec*rec)/(prec+rec)
-
-if __name__ == "__main__":
+def main():
     tp = true_positive(ground_truth, prediction)
     tn = true_negative(ground_truth, prediction)
     fp = false_positive(ground_truth, prediction)
@@ -53,8 +52,10 @@ if __name__ == "__main__":
     rec = recall(tp,fn)
     f1 = f1_score(prec,rec)
 
-
     print(f"Accuracy: {acc:.2f}")
     print(f"Precision: {prec:.2f}")
     print(f"Recall: {rec:.2f}")
     print(f"F1 Score: {f1:.2f}")
+
+if __name__ == "__main__":
+    main()
